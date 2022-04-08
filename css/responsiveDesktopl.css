@@ -1,0 +1,114 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .buscador {
+        height: 15%;
+    }
+
+    .buscador__input {
+        background: url("../img/lupa.svg") no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 15px;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 15px;
+        border: none;
+        margin: 1rem;
+        position: absolute;
+        left: 15rem;
+    }
+
+    .logo {
+        margin: 2rem;
+        width: 15vw;
+    }
+
+    .nav__loguin {
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    .ofertas {
+        height: 40vw;
+    }
+
+    .startWars {
+        width: calc(100% - 4rem);
+        margin: 3rem;
+    }
+
+    .startWars__porductos {
+        margin: .8rem;
+        padding: 1rem;
+
+    }
+
+    .startWars__porductos:nth-child(5),
+    .startWars__porductos:nth-child(6),
+    .consolas__porductos:nth-child(5),
+    .consolas__porductos:nth-child(6),
+    .diversos__porductos:nth-child(5),
+    .diversos__porductos:nth-child(6) {
+        display: inline-block;
+    }
+
+    .consolas__porductos,
+    .diversos__porductos,
+    .startWars__porductos {
+
+        display: inline-block;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+
+
+
+.consolas__img,
+.starWars__img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.ofertas__contenido {
+    top: 45%;
+}
+
+.ofertas__titulo {
+    font-size: 5rem;
+}
+
+.ofertas__parrafo {
+    font-size: 2rem;
+}
+
+section.sobreNosotros {
+    display: flex;
+    height: 60%;
+    padding: 1rem
+}
+
+.sobreNosotros__titulo {
+    width: 15vw;
+    margin: 1rem;
+}
+
+.sobreNosotros__menu {
+    text-align: left;
+}
+
+.sobreNosotros__lista__item {
+    margin: 1.5rem;
+}
+.rodapie__socialMedia{
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+.rodapie__titulo{
+    padding-right: 3rem;
+}
+.rodapie__socialMedia__lista {
+    margin: 1rem;
+}
+}

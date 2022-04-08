@@ -1,0 +1,41 @@
+.buscador{
+    display: flex;
+    border-bottom: 1px solid var(--color-blue);
+}
+.busqueda{
+    right: 0;
+    top: 2rem;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.logo{
+    margin-left: 1.2rem;
+    
+}
+.buscador__input{
+    display: none;
+    padding: 1.5rem;
+}
+.nav{
+    display: inline;
+}
+
+.nav__loguin{
+  border: 1px solid var(--color-blue);
+  padding: .8rem 3rem;
+}
+.nav__busquedas{
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-left: 3rem;
+    background-image: url(../img/lupa.svg);
+    background-repeat: no-repeat;
+}
+.loguin{
+    color:var(--color-blue);
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+}

@@ -1,0 +1,101 @@
+@media only screen and (min-width: 768px) {
+    .buscador {
+        height: 10vw;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    .logo {
+        width: 15vw;
+        margin-left: 1rem;
+    }
+
+    .buscador__input {
+        background: url("../img/lupa.svg") no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 15px;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 15px;
+        border: none;
+        display: block;
+        margin: .5rem;
+        width: 40vw;
+        height: 4vw;
+        position: absolute;
+        left: 10rem;
+        top: 0.5rem;
+
+    }
+
+
+    .busqueda {
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .nav__busquedas {
+        display: none;
+    }
+
+    .nav__loguin {
+        position: absolute;
+        top: 0.2rem;
+        right: 1rem;
+        margin: 1rem;
+    }
+
+    .ofertas__titulo {
+        font-size: 2.5rem;
+
+    }
+
+    /*.ofertas__contenido {
+        top: 45%;
+    }*/
+
+
+
+    .consolas__img,
+    .starWars__img {
+        width: 21vw;
+    }
+
+    section.sobreNosotros {
+        height: 50%;
+    }
+
+    .sobreNosotros__titulo {
+        height: 5vw;
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .sobreNosotros__menu {
+        float: left;
+        margin: 1rem;
+    }
+
+    .contacto {
+        width: 60%;
+        float: left;
+    }
+
+    .contacto__titulo {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .rodapie__lista {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    .rodapie__socialMedia__lista {
+        margin: 0 1rem;
+
+    }
+}
