@@ -6,7 +6,7 @@
     }
 
     .buscador__input {
-        background: url("../img/lupa.svg") no-repeat;
+        /*background: url("../img/lupa.svg") no-repeat;*/
         background-position-x: right;
         background-position-y: center;
         background-color: rgba(245, 245, 245, 1);

@@ -12,9 +12,7 @@
     }
 
     .buscador__input {
-        background: url("../img/lupa.svg") no-repeat;
-        background-position-x: right;
-        background-position-y: center;
+       
         background-color: rgba(245, 245, 245, 1);
         border-radius: 15px;
         background-color: rgba(245, 245, 245, 1);
@@ -28,6 +26,12 @@
         left: 10rem;
         top: 0.5rem;
 
+    }
+    .buscador__input::placeholder{
+        background-image: url("../img/lupa.svg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 15px;
     }
 
 
