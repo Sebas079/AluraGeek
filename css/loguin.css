@@ -1,0 +1,27 @@
+.loguin{
+    margin: 2rem;
+    text-align: center;
+
+}
+.loguin__titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.loguin__user,
+.loguin__pass{
+    display: block;
+    width: 80%;
+    height: 2.5rem;
+    margin: 1rem;
+    padding: .8rem;
+}
+.loguin__enviar{
+    padding: 1rem 3rem;
+    margin: 1rem;
+    color: #fff;
+    background: var(--colorButton);
+}
+.loguin__enviar::placeholder{
+    font-family: var(--raleway);
+}

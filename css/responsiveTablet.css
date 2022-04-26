@@ -1,105 +1,70 @@
-@media only screen and (min-width: 768px) {
-    .buscador {
-        height: 10vw;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-
-    .logo {
-        width: 15vw;
-        margin-left: 1rem;
+@media screen and (min-width: 768px) {
+    .busqueda {
+        display: flex;
+        justify-content: space-around;
     }
 
     .buscador__input {
-       
-        background-color: rgba(245, 245, 245, 1);
-        border-radius: 15px;
-        background-color: rgba(245, 245, 245, 1);
-        border-radius: 15px;
+        background: var(--bodyBacground);
+        display: inline;
+        width: 60%;
+        height: 3rem;
         border: none;
-        display: block;
-        margin: .5rem;
-        width: 40vw;
-        height: 4vw;
-        position: absolute;
-        left: 10rem;
-        top: 0.5rem;
-
+        border-radius: 20px;
     }
-    .buscador__input::placeholder{
-        background-image: url("../img/lupa.svg");
-        background-position: right center;
+
+    .buscador__input::placeholder {
+        background-image: url(../img/lupa.svg);
         background-repeat: no-repeat;
-        background-size: 15px;
-    }
-
-
-    .busqueda {
-        margin: 0 auto;
-        padding: 1.5rem;
+        background-position: right;
+        margin-right: 1rem;
     }
 
     .nav__busquedas {
         display: none;
     }
 
-    .nav__loguin {
-        position: absolute;
-        top: 0.2rem;
-        right: 1rem;
-        margin: 1rem;
+    .ofertas__contenido {
+        margin-top: 5rem;
     }
 
-    .ofertas__titulo {
-        font-size: 2.5rem;
-
-    }
-
-    /*.ofertas__contenido {
-        top: 45%;
-    }*/
-
-
-
-    .consolas__img,
-    .starWars__img {
-        width: 21vw;
-    }
-
-    section.sobreNosotros {
-        height: 50%;
+    .startwars__lista,
+    .consolas__lista,
+    .diversos__lista {
+        margin: .8rem;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .sobreNosotros__titulo {
-        height: 5vw;
-        margin-left: 1rem;
-        text-align: left;
+        width: 100%;
     }
 
-    .sobreNosotros__menu {
-        float: left;
+    .sobreNosotros__titulo__img {
+        width: 25vw;
         margin: 1rem;
     }
 
-    .contacto {
-        width: 60%;
-        float: left;
+    .sobreNosotros__form {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 1rem;
     }
 
-    .contacto__titulo {
+    .sobreNosotros__lista {
         text-align: left;
         margin-left: 1rem;
     }
 
-    .rodapie__lista {
-        width: 50%;
-        margin: 0 auto;
-
+    .contacto {
+        margin-right: 1rem;
     }
 
-    .rodapie__socialMedia__lista {
-        margin: 0 1rem;
-
+    /* loguin usuario*/
+    .loguin__user,
+    .loguin__pass {
+        margin: 1rem auto;
     }
 }

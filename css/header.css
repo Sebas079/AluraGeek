@@ -1,41 +1,48 @@
 .buscador{
+    background: #fff;
     display: flex;
-    border-bottom: 1px solid var(--color-blue);
+    align-content: center;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1.5px solid var(--colorButton);
+    height: 10vh;
+}
+.logo{
+    width: 10rem;
+    margin: 1rem;
 }
 .busqueda{
-    right: 0;
-    top: 2rem;
-    margin: 0;
-    padding: 1.5rem;
+    width: 100%;
 }
-
-.logo{
-    margin-left: 1.2rem;
-    
+.busqueda__lista{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .buscador__input{
     display: none;
-    padding: 1.5rem;
 }
-.nav{
-    display: inline;
+.nav__loguin{
+    color: var(--colorButton);
+    border: 1.5px solid var(--colorButton);
+    padding: 1rem 2rem;
+}
+.nav__loguin:hover{
+    background: rgb(148, 149, 149) ;
+    cursor: pointer;
+    
 }
 
-.nav__loguin{
-  border: 1px solid var(--color-blue);
-  padding: .8rem 3rem;
-}
 .nav__busquedas{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-left: 3rem;
-    background-image: url(../img/lupa.svg);
+    background-image: url("../img/lupa.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    padding: 1.5rem;
 }
-.loguin{
-    color:var(--color-blue);
-    font-size: .9rem;
-    font-weight: 600;
-    text-decoration: none;
+input:active{
+    border: 2px solid var(--colorButton);
+    
 }
+

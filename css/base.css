@@ -1,0 +1,19 @@
+:root{
+    --bodyBacground : #E5E5E5;
+    --raleway:"Raleway","Montserrat", "Open Sand", "Sans Serif";
+    --colorButton:#2A7AE4;
+    --colorFont: #878181c1;
+    --formBackground: #bdd2fb;
+    --activeBtn: #786f6f;
+
+}
+html,body{
+    box-sizing: border-box;
+    background: var(--bodyBacground);
+    font-family: var(--raleway);
+    width: 100%;
+
+}
+main.contenido{
+    width: 100%;
+}

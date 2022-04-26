@@ -1,0 +1,88 @@
+.startWars__porductos:nth-child(5),
+.startWars__porductos:nth-child(6),
+.consolas__porductos:nth-child(5),
+.consolas__porductos:nth-child(6),
+.diversos__porductos:nth-child(5),
+.diversos__porductos:nth-child(6) {
+    display: inline;
+}
+
+@media(min-width: 992px) {
+    .logo {
+        width: 15vw;
+        margin-left: 3rem;
+    }
+
+    .nav__busquedas {
+        display: none;
+    }
+
+    .buscador__input {
+        background: var(--bodyBacground);
+        width: 60%;
+        height: 2rem;
+        display: inline;
+        border-radius: 15px;
+        padding-left: 1.5rem;
+    }
+
+    .buscador__input::placeholder {
+        background-image: url(../img/lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 1rem;
+    }
+
+    .busqueda {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav__loguin {
+        padding: 1rem 3rem;
+    }
+
+    .tdProductos__contenido {
+        width: calc(95% - 5%);
+        margin: 0 auto;
+    }
+
+    .startWars__porductos,
+    .consolas__porductos,
+    .diversos__porductos {
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .sobreNosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .sobreNosotros__titulo{
+        width: 15vw;
+    }
+    .sobreNosotros__link{
+        color: 46;
+        color: var(--colorFont);
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .sobreNosotros__menu{
+        margin:1rem;
+    }
+    .contacto{
+        width: calc(100% - 40%);
+    margin: 1rem;
+    }
+    .rodapie__socialMedia__img{
+        width: 4vw;
+    }
+    .contacto__enviar:hover{
+        cursor: pointer;
+        background-color: var(--activeBtn);
+    }
+}

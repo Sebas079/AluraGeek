@@ -1,0 +1,14 @@
+@media (min-width:992px) {
+    .logo {
+        width: 10rem;
+    }
+    .productosSimilares__lista{
+        justify-content: space-around;
+    }
+
+    .productosSimilares__items:nth-child(5),
+    .productosSimilares__items:nth-child(6) {
+        display: inline;
+    }
+
+}

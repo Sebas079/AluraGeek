@@ -1,0 +1,49 @@
+@media screen and (min-width: 992px){
+ .buscador{
+     padding: 2rem;
+ }
+ .nav__loguin{
+     padding: 1rem 2.5rem;
+ }
+ .ofertas{
+     height: 70vh;
+ }
+ .ofertas__titulo{
+    font-size: 3rem;
+    font-weight: 700;
+ }
+ .ofertas__parrafo{
+     font-size: 1.5rem;
+ }
+ .startWars__porductos:nth-child(5),
+ .startWars__porductos:nth-child(6),
+ .consolas__porductos:nth-child(5),
+ .consolas__porductos:nth-child(6),
+ .diversos__porductos:nth-child(5),
+ .diversos__porductos:nth-child(6){
+     display: inline;
+ }
+.rodapie__socialMedia__img {
+    width: 2vw;
+} 
+.sobreNosotros{
+    flex-direction: row;
+}
+.sobreNosotros__titulo{
+    margin: 2rem;
+    text-align: center;
+    width: 30%;
+}   
+.sobreNosotros__titulo__img{
+    width: 15vw;
+    margin: 2rem;
+}
+.rodapie__socialMedia__img{
+    width: 4vw;
+}
+form.loguin{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+}

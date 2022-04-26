@@ -1,37 +1,19 @@
-/*.rodapie__socialMedia{
-    padding-left: 30%;
-    padding-right: 20%;
-
-} */       
+.rodapie{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .rodapie__titulo{
-    font-size: .8rem;
-    margin:1rem;
-    color: #000000;
-    font-weight: 700;
-    margin-top: 2rem;
-    text-align: center;
+    margin: 1rem;
 }
-.rodapie__socialMedia__lista{
-    display: inline;
-    margin:1rem;
-    font-size: 0;
-    font-weight: 700;
-    
+.rodapie__lista{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
 }
-
 .rodapie__socialMedia__img{
-    width: 40px;
-    height: auto;
-    border: 1px solid #ffffff;
-    border-radius: 100%;
-   /* margin-right: .5rem;*/
-   margin: 1.5rem;
-
-}
-.rodapie__socialMedia__link{
-    text-decoration: none;
-    
-}
-.rodapie__socialMedia__img:hover{
-    cursor: pointer;
+    width: 10vw;
 }

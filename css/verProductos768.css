@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .busqueda{
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .buscador__input{
+        display: inline;
+        background: var(--bodyBacground);
+        width: 60%;
+        height: 2rem;
+        display: inline;
+        border-radius: 15px;
+        padding-left: 1.5rem;
+    }
+    .buscador__input::placeholder {
+        background-image: url(../img/lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 1rem;
+    }
+    .nav__busquedas{
+        display: none;
+    }
+    .productoPrincipal {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    img.productoPrincipal__img{
+        width: 40vw;
+        margin: 1rem;
+    }
+    .productosSimilares__lista{
+        justify-content: stretch;
+    }
+    .productosSimilares__items{
+        margin: .5rem;
+    }
+    .sobreNosotros{
+        flex-direction: row;
+    }
+    .sobreNosotros__titulo {
+        width: 22vw;
+        margin: 1rem;
+    }
+    .sobreNosotros__nav{
+
+        width: 40%;
+    text-align: LEFT;
+    margin: 1rem;
+    }
+    .rodapie__socialMedia__img {
+        width: 2rem;
+    }
+
+}

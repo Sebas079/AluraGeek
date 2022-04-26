@@ -1,0 +1,41 @@
+@media (min-width:768px) {
+
+    .startwars__lista,
+    .consolas__lista,
+    .diversos__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tdProductos__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .productos__titulo {
+        height: 2rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .agregarProducto{
+        width: 15vw;
+        background: var(--colorButton);
+        margin: 1rem;
+        padding: 1.2rem .8rem;
+        color: #fff;
+    }
+    .sobreNosotros{
+        flex-direction: row;
+    }
+    img.sobreNosotros__titulo{
+        width: 22vw;
+    }
+    .sobreNosotros__menu__content{
+        width: 40%;
+    }
+    .contacto{
+        padding: 2rem;
+    }
+}

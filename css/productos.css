@@ -1,0 +1,85 @@
+.starWars,
+.consolas,
+.diversos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.starWars__head,
+.consolas__head,
+.diversos__head{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+}
+.starWars__titulo,
+.consolas__titulo,
+.diversos__titulo{
+    columns: var(--colorFont);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+    
+}
+.verTodo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.verTodo__link{
+    color: var(--colorButton);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+.starWars__content,
+.consolas__content,
+.diversos__content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.startwars__lista,
+.consolas__lista,
+.diversos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.startWars__porductos,
+.consolas__porductos,
+.diversos__porductos{
+    margin-bottom: .5rem;
+}
+.startWars__porductos:nth-child(5),
+.startWars__porductos:nth-child(6),
+.consolas__porductos:nth-child(5),
+.consolas__porductos:nth-child(6),
+.diversos__porductos:nth-child(5),
+.diversos__porductos:nth-child(6){
+    display: none;
+}
+
+.starWars__descripcion,
+.starWars__precio,
+.startWars__verProductos,
+.consolas__descripcion,
+.consolas__precio,
+.consolas__verProductos,
+.diversos__descripcion,
+.diversos__precio,
+.diversos__verProductos{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.startWars__verProductos,
+.consolas__verProductos,
+.diversos__verProductos{
+    color:var(--colorButton)
+}
