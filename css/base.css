@@ -9,6 +9,7 @@
 }
 html,body{
     box-sizing: border-box;
+    display:contents;
     background: var(--bodyBacground);
     font-family: var(--raleway);
     width: 100%;

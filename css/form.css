@@ -16,6 +16,9 @@
 .sobreNosotros__lista__item{
     margin-bottom: 1rem;
 }
+.sobreNosotros__link{
+    color: var(--colorFont);
+}
 .contacto{
     display: flex;
     flex-direction: column;
