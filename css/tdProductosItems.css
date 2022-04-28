@@ -1,0 +1,111 @@
+.porductos__lista__item{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+ 
+}
+.porductos__lista__item div.starWars__img{
+    width: 35vw;
+    height: 35vw;
+}
+
+.porductos__lista__item:nth-child(1) div.starWars__img {
+    background: url("../img/unsplash_6FDXGY9J6y4.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(2) div.starWars__img {
+    background: url("../img/unsplash_epRFE_hBNjo.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(3) div.starWars__img {
+    background: url("../img/unsplash_KeGToDVN0l4.svg") center /cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(4) div.starWars__img {
+    background: url("../img/unsplash_4OHkK555s1A.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(5) div.starWars__img {
+    background: url("../img/unsplash_R8L1l9RN198.svg") center /cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(6) div.starWars__img {
+    background: url("../img/unsplash_1VV1MRafd7A.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(7) div.starWars__img {
+    background: url("../img/unsplash_0POwK6iAiRQ.svg") center / cover no-repeat;
+}
+
+.porductos__lista__item:nth-child(8) div.starWars__img {
+    background: url("../img/unsplash_caNzzoxls8Q.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(9) div.starWars__img {
+    background: url("../img/unsplash_ZV7lnfyQLmA.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(10) div.starWars__img {
+    background: url("../img/unsplash_wa5z9o9fgjw.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(11) div.starWars__img {
+    background: url("../img/unsplash_Zjn4dT993-g.svg") center / cover no-repeat;
+}
+
+.porductos__lista__item:nth-child(12) div.starWars__img {
+    background: url("../img/unsplash_k-xYhI3-gJM.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(13) div.starWars__img {
+    background: url("../img/unsplash_fMP-oCze3AY.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(14) div.starWars__img {
+    background: url("../img/unsplash_bUgaIaZysH0.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(15) div.starWars__img {
+    background: url("../img/unsplash_sYVY_ZKwaxU.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(16) div.starWars__img {
+    background: url("../img/unsplash_jMT6BrgBuXU.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(17) div.starWars__img {
+    background: url("../img/unsplash_MxVkWPiJALs.svg") center / cover no-repeat;
+
+}
+
+.porductos__lista__item:nth-child(18) div.starWars__img {
+    background: url("../img/unsplash_r27umXAelDc.svg") center / cover no-repeat;
+
+}
+
+.editar,
+.borrar {
+    float: right;
+    margin: .5rem;
+}
+
+@media (min-width:992px) {
+    .porductos__lista__item div.starWars__img {
+        width: 18vw;
+        height: 20vw;
+    }
+}

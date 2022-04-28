@@ -1,5 +1,28 @@
 @media (min-width:768px) {
+    .busqueda{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav__busquedas{
+        display: none;
+    }
 
+    .buscador__input {
+        background: var(--bodyBacground);
+        width: 60%;
+        height: 2rem;
+        display: inline;
+        border-radius: 15px;
+        padding-left: 1.5rem;
+    }
+
+    .buscador__input::placeholder {
+        background-image: url(../img/lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-right: 1rem;
+    }
     .startwars__lista,
     .consolas__lista,
     .diversos__lista {
@@ -20,10 +43,10 @@
         font-weight: 700;
     }
     .agregarProducto{
-        width: 15vw;
+    
         background: var(--colorButton);
         margin: 1rem;
-        padding: 1.2rem .8rem;
+        padding: 1.2rem ;
         color: #fff;
     }
     .sobreNosotros{
@@ -38,4 +61,12 @@
     .contacto{
         padding: 2rem;
     }
+    .porductos__lista__item:nth-child(5),
+.porductos__lista__item:nth-child(6),
+.porductos__lista__item:nth-child(11),
+.porductos__lista__item:nth-child(12),
+.porductos__lista__item:nth-child(17),
+.porductos__lista__item:nth-child(18){
+    display: inline;
+}
 }

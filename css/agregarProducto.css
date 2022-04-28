@@ -64,5 +64,13 @@
     .descripcionProducto{
         height: 33vw;
     }
+}
+@media (min-width:768px){
+    .agregarImagen{
+        width: 100%;
+        margin-left: 1rem;
+
+    }
 
 }
+
