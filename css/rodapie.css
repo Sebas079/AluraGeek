@@ -17,3 +17,8 @@
 .rodapie__socialMedia__img{
     width: 10vw;
 }
+@media(min-width:992px){
+    .rodapie__socialMedia__img{
+        width: 3vw;
+    }
+}

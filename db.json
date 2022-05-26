@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653488076/uefqboe72yqrbynjsyqp.png",
+      "productName": "producto 3",
+      "price": "63",
+      "description": "Aqui va la descripcion del producto y caractericticas mas relevantes",
+      "id": "5921f1e6-4ef3-47a0-bc47-3e73db456dc9"
+    },
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653575459/c56j5kvqeia2agxp1f7f.png",
+      "producName": "prueba 36",
+      "price": "456.5",
+      "description": "esta es la que sirve!!",
+      "id": "9ORxzQg"
+    },
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653576045/mt7vvjueitbpufh4tp57.svg",
+      "producName": "Remera Atari",
+      "price": "654.",
+      "description": "Remera vintage",
+      "id": "53bd31ab-4da8-4dce-9669-6b66fef77a0a"
+    },
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653576783/nsvlcowpmx1nes5ria8t.svg",
+      "producName": "Reloj Vintage",
+      "price": "1235.00",
+      "description": "Radio reloj despertador vintage",
+      "id": "b186ff67-eb20-43d1-926c-fc2fde0f3555"
+    }
+  ]
+}

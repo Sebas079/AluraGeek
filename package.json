@@ -1,0 +1,20 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "e-comerce alura challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebas079/AluraGeek.git"
+  },
+  "author": "Sebastian Lopez Lorenzo",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Sebas079/AluraGeek/issues"
+  },
+  "homepage": "https://github.com/Sebas079/AluraGeek#readme"
+}

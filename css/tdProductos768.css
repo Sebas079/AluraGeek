@@ -1,10 +1,11 @@
 @media (min-width:768px) {
-    .busqueda{
+    .busqueda {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    .nav__busquedas{
+
+    .nav__busquedas {
         display: none;
     }
 
@@ -23,6 +24,7 @@
         background-position: right;
         margin-right: 1rem;
     }
+
     .startwars__lista,
     .consolas__lista,
     .diversos__lista {
@@ -42,31 +44,38 @@
         font-size: 1.5rem;
         font-weight: 700;
     }
-    .agregarProducto{
-    
+
+    .agregarProducto {
+        width: auto;
+        margin: 0.5rem;
         background: var(--colorButton);
         margin: 1rem;
-        padding: 1.2rem ;
+        padding: 1.2rem;
         color: #fff;
     }
-    .sobreNosotros{
+
+    .sobreNosotros {
         flex-direction: row;
     }
-    img.sobreNosotros__titulo{
+
+    img.sobreNosotros__titulo {
         width: 22vw;
     }
-    .sobreNosotros__menu__content{
+
+    .sobreNosotros__menu__content {
         width: 40%;
     }
-    .contacto{
+
+    .contacto {
         padding: 2rem;
     }
+
     .porductos__lista__item:nth-child(5),
-.porductos__lista__item:nth-child(6),
-.porductos__lista__item:nth-child(11),
-.porductos__lista__item:nth-child(12),
-.porductos__lista__item:nth-child(17),
-.porductos__lista__item:nth-child(18){
-    display: inline;
-}
+    .porductos__lista__item:nth-child(6),
+    .porductos__lista__item:nth-child(11),
+    .porductos__lista__item:nth-child(12),
+    .porductos__lista__item:nth-child(17),
+    .porductos__lista__item:nth-child(18) {
+        display: inline;
+    }
 }

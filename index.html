@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./css/rodapie.css">
     <link rel="stylesheet" href="./css/responsiveTablet.css">
     <link rel="stylesheet" href="./css/screen992.css">
+    <script defer href="./js/controllers/service.js"></script>
+    <script defer type="module" src="./js/controllers/service.js"></script>
 
     <title>Alura Geek</title>
 </head>
@@ -29,7 +31,7 @@
             <img src="./img/Logo.svg" alt="logo Alura geek" class="logo">
         </h1>
         <div class="busqueda">
-            <input class="buscador__input" placeholder="Que deseas buscar?">
+            <input class="buscador__input" data-find placeholder="Que deseas buscar?">
             <ul class="busqueda__lista">
                 <a href="./loguin.html" class="busqueda__loguin" target="_blank">
                     <li class="nav nav__loguin ">Loguin</li>
@@ -45,7 +47,7 @@
 
 
     <main class="contenido">
-            <section class="ofertas">
+        <section class="ofertas">
 
             <div class="ofertas__contenido">
                 <h1 class="ofertas__titulo">Promociones Estacionales</h1>
@@ -74,41 +76,41 @@
             <div class="starWars__content">
 
                 <ul class="starWars__lista">
-                    <li class="starWars__porductos">
+                    <li class="starWars__porductos" data-list>
                         <img src="./img/unsplash_6FDXGY9J6y4.svg" alt="Taza starwars" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Taza StarWars</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Taza StarWars</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="./productos/producto1.html" class="startWars__verProductos">Ver producto</a>
 
 
                     </li>
-                    <li class="starWars__porductos">
+                    <li class="starWars__porductos" data-list>
                         <img src="./img/unsplash_epRFE_hBNjo.svg" alt="darth vader" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Darth Vader</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Darth Vader</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="./productos/producto2.html" class="startWars__verProductos">Ver producto</a>
                     </li>
-                    <li class="starWars__porductos">
+                    <li class="starWars__porductos" data-list>
                         <img src="./img/unsplash_KeGToDVN0l4.svg" alt="yoda" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Yoda</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Yoda</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="./productos/producto3.html" class="startWars__verProductos">Ver producto</a>
                     </li>
-                    <li class="starWars__porductos">
+                    <li class="starWars__porductos" data-list>
                         <img src="./img/unsplash_4OHkK555s1A.svg" alt="soldado imperial" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Solado Imperial</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Solado Imperial</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="" class="startWars__verProductos">Ver producto</a>
                     </li>
                     <li class="starWars__porductos">
                         <img src="./img/unsplash_R8L1l9RN198.svg" alt="baby yoda" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Baby Yoda</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Baby Yoda</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="" class="startWars__verProductos">Ver producto</a>
                     </li>
                     <li class="starWars__porductos">
                         <img src="./img/unsplash_1VV1MRafd7A.svg" alt="lord" class="starWars__img">
-                        <h4 class="starWars__descripcion precio">Producto XYZ</h4>
+                        <h4 class="starWars__descripcion precio" data-titulo>Producto XYZ</h4>
                         <h4 class="starWars__precio">$60.00</h4>
                         <a href="" class="startWars__verProductos">Ver producto</a>
                     </li>
@@ -136,38 +138,38 @@
                 <ul class="consolas__lista">
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_0POwK6iAiRQ.svg" alt="joystik" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Joystik</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Joystik</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="consolas__verProductos">Ver producto</a>
 
                     </li>
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_caNzzoxls8Q.svg" alt="consola y control" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Control + consola</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Control + consola</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="consolas__verProductos">Ver producto</a>
                     </li>
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_ZV7lnfyQLmA.svg" alt="Consola Nintendo" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Consola Nintendo</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Consola Nintendo</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="consolas__verProductos">Ver producto</a>
                     </li>
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_wa5z9o9fgjw.svg" alt="Joystik Nintendo" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Joystik Nintendo</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Joystik Nintendo</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="startWars__verProductos">Ver producto</a>
                     </li>
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_Zjn4dT993-g.svg" alt="consola cubo" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Console Cube</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Console Cube</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="startWars__verProductos">Ver producto</a>
                     </li>
                     <li class="consolas__porductos">
                         <img src="./img/unsplash_k-xYhI3-gJM.svg" alt="Game Boy" class="consolas__img">
-                        <h4 class="consolas__descripcion precio">Game Boy</h4>
+                        <h4 class="consolas__descripcion precio" data-titulo>Game Boy</h4>
                         <h4 class="consolas__precio">$60.00</h4>
                         <a href="" class="consolas__verProductos">Ver producto</a>
                     </li>
