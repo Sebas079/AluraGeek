@@ -46,6 +46,7 @@
     }
 
     .agregarProducto {
+        display: block;
         width: auto;
         margin: 0.5rem;
         background: var(--colorButton);
@@ -78,4 +79,5 @@
     .porductos__lista__item:nth-child(18) {
         display: inline;
     }
+   
 }

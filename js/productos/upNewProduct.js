@@ -15,7 +15,7 @@ btnAgregarProducto.addEventListener("click", (event) => {
   event.preventDefault() 
 
  newProducto.image = image.src;
- newProducto.producName = nombreProducto.value;
+ newProducto.productName = nombreProducto.value;
  newProducto.price = precio.value;
  newProducto.description = description.value;
  newProducto.id = uuid.v4();

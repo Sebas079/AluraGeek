@@ -64,6 +64,7 @@
 .starWars__lista,
 .consolas__lista,
 .diversos__lista{
+    margin:.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
