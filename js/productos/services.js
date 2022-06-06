@@ -1,7 +1,9 @@
-const addProducts = () => fetch("http://localhost:3000/profile").then((response) => response.json());
+
+const addProducts = () => fetch("http://localhost:3000/profile").then((response) =>(response.json() ));
 
 
 const crearProducto= (image, productName, price, description,id ) =>{
+    console.log(image, productName, price, description,id )
     return fetch("http://localhost:3000/profile",{
         method:"POST",
         headers:{
@@ -11,9 +13,18 @@ const crearProducto= (image, productName, price, description,id ) =>{
     })
 }
 
+const deleteProduct = (id) =>{
+    console.log("Eliminar a " + id);
+    return fetch(`http://localhost:3000/profile/${id}`,{
+    method: "DELETE"
+    })
+}   
+
 export const services ={
     addProducts,
     crearProducto,
+    deleteProduct,
+
 }
 
 

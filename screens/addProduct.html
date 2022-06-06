@@ -36,8 +36,8 @@
         <div class="busqueda">
             <input class="buscador__input" placeholder="Que deseas buscar?">
             <ul class="busqueda__lista">
-                <a href="../screens/loguin.html" class="busqueda__loguin" target="_blank">
-                    <li class="nav nav__loguin ">Loguin</li>
+                <a href="./productsEdit.html" class="busqueda__loguin" target="_blank">
+                    <li class="nav nav__loguin ">Ver todos los productos</li>
                 </a>
                 <a href="#" class="busquedas"></a>
                 <li class="nav nav__busquedas"></li>
@@ -48,6 +48,8 @@
         </div>
     </header>
     <main class="contenido">
+    
+
         <h1 class="nuevoProducto__titulo">Agregar nuevo producto</h1>
 
         <section class="nuevoProducto">-->
@@ -58,12 +60,14 @@
                 <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png" hidden class="inputFile"
                     id="img-uploader">
             </div>
-            <form action="" class="nuevoProducto__form">
+            <form action="post" class="nuevoProducto__form">
             <div style="margin:1rem">
-                <input type="text" class="nombreProducto" placeholder="Nombre de produco">
-                <input type="text" class="precioProducto" placeholder="Precio">
-                <textarea type="text" class="descripcionProducto" placeholder="Descripcion"></textarea>
-                <button type="submit" class="agregarProducto">Agregar producto</button>
+                <input type="text" class="nombreProducto" placeholder="Nombre de produco" required>
+                <input type="text" class="seccionProducto nombreProducto" placeholder="seccion" required>
+                
+                <input type="text" class="precioProducto" placeholder="Precio" required>
+                <textarea type="text" class="descripcionProducto" placeholder="Descripcion" required></textarea>
+                <button type="submit" class="agregarProducto">Agregar Producto</button>
             </div>
 
 
@@ -101,10 +105,10 @@
                 <form action="POST" class="contacto">
                     <legend class="contacto__titulo">Hable con nosotros</legend>
 
-                    <input type="text" class="contacto__nombre__input" placeholder="Nombre" id="nombre">
+                    <input type="text" class="contacto__nombre__input" placeholder="Nombre" id="nombre" required>
 
                     <textarea name="" id="" cols="30" rows="10" class="contacto__mensaje"
-                        placeholder="Mensaje"></textarea>
+                        placeholder="Mensaje" required></textarea>
                     <button type="submit" class="contacto__enviar" placeholder="Enviar mensaje">Enviar mensaje</button>
                 </form>
             </div>

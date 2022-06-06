@@ -15,27 +15,6 @@
   ],
   "profile": [
     {
-      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653488076/uefqboe72yqrbynjsyqp.png",
-      "productName": "producto 3",
-      "price": "63",
-      "description": "Aqui va la descripcion del producto y caractericticas mas relevantes",
-      "id": "5921f1e6-4ef3-47a0-bc47-3e73db456dc9"
-    },
-    {
-      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653575459/c56j5kvqeia2agxp1f7f.png",
-      "productName": "prueba 36",
-      "price": "456.5",
-      "description": "esta es la que sirve!!",
-      "id": "9ORxzQg"
-    },
-    {
-      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653576045/mt7vvjueitbpufh4tp57.svg",
-      "productName": "Remera Atari",
-      "price": "654.",
-      "description": "Remera vintage",
-      "id": "53bd31ab-4da8-4dce-9669-6b66fef77a0a"
-    },
-    {
       "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1653576783/nsvlcowpmx1nes5ria8t.svg",
       "productName": "Reloj Vintage",
       "price": "1235.00",
@@ -69,6 +48,22 @@
       "price": "4646",
       "description": "seguimos probando",
       "id": "58820605-f608-4d51-8ad2-e8e442f560e6"
+    },
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1654516774/fwmlt8c8jll81dxia4nu.png",
+      "seccion": "Starwars",
+      "price": "464",
+      "description": "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "id": "2cdc0647-1f7a-4b12-98ed-453b1cd33eb4",
+      "productName": "Producto GHF"
+    },
+    {
+      "image": "http://res.cloudinary.com/dtlvunuzt/image/upload/v1654518559/phemhq781hpxkfxmn0y6.svg",
+      "seccion": "consolas",
+      "price": "456.06",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "id": "b3041d86-1039-44c2-adbd-0bfc20029e99",
+      "productName": "producto FGT"
     }
   ]
 }
