@@ -1,4 +1,4 @@
-import { services } from "./services.js";
+/*import { services } from "./services.js";
 
 
 
@@ -23,15 +23,7 @@ function newProduct(image, productName, precio, descripcionProducto, id) {
    </li> `;
   li.innerHTML = contenido;
   li.classList.add("starWars__lista");
-  const btnEliminar = li.querySelector("button")
   
-  btnEliminar.addEventListener("click", () =>{
-    const id = btnEliminar.id;
-    console.log(id)
-    services.deleteProduct(id).then(() => console.log("gracias!").catch( e => console.log("Error")));
-   
-  });
-
   return li;
 };
 
@@ -41,3 +33,4 @@ const ul = document.querySelector(".starWars__lista");
 services.addProducts(newProduct).then(data =>{
   console.log(data)
 })
+*/

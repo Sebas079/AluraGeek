@@ -4,7 +4,7 @@ import { services } from "./services.js";
 
 import { imagePreview } from "./uploadImg.js";
 const nombreProducto = document.querySelector(".nombreProducto");
-const seccion = document.querySelector(".seccionProducto");
+const categoria = document.querySelector(".seccionProducto");
 const precio = document.querySelector(".precioProducto");
 const description = document.querySelector(".descripcionProducto");
 const image = document.querySelector("#img-preview");
@@ -17,14 +17,14 @@ btnAgregarProducto.addEventListener("click", (event) => {
   
   newProducto.image = image.src;
   newProducto.productName = nombreProducto.value;
-  newProducto.seccion = seccion.value;
+  newProducto.categoria= categoria.value;
   newProducto.price = precio.value;
   newProducto.description = description.value;
   newProducto.id = uuid.v4();
-  if(newProducto.image != "" && newProducto.producName != "" && newProducto.seccion != "" && newProducto.price != "" && newProducto.description != "" ){
+  if(newProducto.image != "" && newProducto.producName != "" && newProducto.categoria != "" && newProducto.price != "" && newProducto.description != "" ){
     console.log(newProducto)
     services.crearProducto(newProducto).then(response => console.log(response))
-    .catch(err => alert(err, "ocurrio un error"));
+    .catch(err => err= window.location.href="../screens/error.html");
   }else{
     alert("Todos los campos son obligatorios" )
   }

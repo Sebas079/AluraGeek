@@ -105,12 +105,12 @@
 .diversos__verProductos{
     color:var(--colorButton)
 }
-.editar__borrar{
-    display: none;
+
+.borrar :hover{
+    cursor: pointer;
+
 }
-.btnAgregarImg{
-    display: none;
-}
-.imgEditar{
-    height: 100%;
+img.sobreNosotros__titulo {
+    width: 15vw;
+
 }

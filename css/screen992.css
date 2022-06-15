@@ -46,4 +46,9 @@ form.loguin{
     margin: 0 auto;
     padding: 1rem;
 }
+.starWars__lista, 
+    .consolas__lista, 
+    .diversos__lista{
+        width: auto;
+    }
 }

@@ -10,5 +10,12 @@
     .productosSimilares__items:nth-child(6) {
         display: inline;
     }
+    .starWars__lista, 
+    .consolas__lista, 
+    .diversos__lista{
+        width: auto;
+    }
+    
+    
 
 }

@@ -1,19 +1,47 @@
+import { services } from "./services.js";
+import { newProduct } from "./nuevoProducto.js";
+
+const formulario = document.querySelector(".nuevoProducto__form");
+const editarProducto = () => {
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+    if (id === null) {
+        window.location.href = "../screens/error.html"
+    }
+    services.verProducto(id).then((data) => {
+        console.log(data)
+        const imgInput = document.querySelector("#img-preview")//.
+        const fileInput = document.querySelector(".btnUploadImg")//.
+        const inputNombreProducto = document.querySelector(".nombreProducto");
+        const inputSeccion = document.querySelector(".seccionProducto");
+        const inputPrecio = document.querySelector(".precioProducto");
+        const inputDescripcion = document.querySelector(".descripcionProducto");
+        imgInput.classList.add("imgEditar");
+        fileInput.classList.add("btnAgregarImg");
+        imgInput.src = data.image;
+        inputNombreProducto.value = data.productName;
+        inputSeccion.value = data.categoria;
+        inputPrecio.value = data.price;
+        inputDescripcion.value = data.description;
+    })
 
 
-const editar = document.querySelectorAll(".editar");
-const borrar = document.querySelectorAll(".borrar");
-const agregarProducto = document.querySelector(".agregarProducto");
-//console.log(editar);
 
-//editar.classList.add("display:blok")
 
-/*<div class="productoPrincipal__img">
-  <img src="${image}" alt="${productName}"class="productoPrincipal__img ">
- </div>
+}
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const url = new URL(window.location);
+    const id = url.searchParams.get("id");
+    console.log(id)
+    const imgInput = document.querySelector("#img-preview").src
+    const inputNombreProducto = document.querySelector(".nombreProducto").value;
+    const inputSeccion = document.querySelector(".seccionProducto").value;
+    const inputPrecio = document.querySelector(".precioProducto").value;
+    const inputDescripcion = document.querySelector(".descripcionProducto").value;
+    console.log(imgInput, inputNombreProducto, inputSeccion, inputPrecio, inputDescripcion, id)
+    services.actualizarProducto(imgInput, inputNombreProducto, inputSeccion, inputPrecio, inputDescripcion, id)
 
-<div class="productoPrincipal__contenido">
-  <h4 class="starWars__descripcion precio productoPrincipal__titulo  ">${productName}</h4>
-  <h4 class="starWars__precio productoPrincipal__precio "> $ ${precio}</h4>
-  <p class="productoPricipal__descripcion">${descripcionProducto}</p>
 
-</div>*/
+})
+editarProducto();

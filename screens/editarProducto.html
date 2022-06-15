@@ -13,15 +13,18 @@
     rel="stylesheet">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/agregarProducto.css">
     <link rel="stylesheet" href="../css/form.css">
-    <link rel="stylesheet" href="../css/rodapie.css">
-    <link rel="stylesheet" href="../css/verProducto.css">
+    <link rel="stylesheet" href="../css/screen992.css">
     <link rel="stylesheet" href="../css/verProductos768.css">
-    <link rel="stylesheet" href="../css/tdProductos992.css">
+    <link rel="stylesheet" href="../css/responsiveTablet.css">
+    <link rel="stylesheet" href="../css/rodapie.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <script defer type="module"   src="../js/productos/productosEditar.js"></script>
     
  
     
-    <title>Soldado Imperial</title>
+    <title>Editar producto</title>
 </head>
 
 <body>
@@ -30,75 +33,46 @@
         <div class="busqueda">
             <input class="buscador__input" placeholder="Que deseas buscar?">
             <ul class="busqueda__lista">
-                <li class="nav nav__loguin "><a href="../loguin.html" class="loguin"></a>Login</li>
+                <li class="nav nav__loguin "><a href="../screens/productsEdit.html" class="loguin">Editar otro producto</a></li>
                 <li class="nav nav__busquedas"><a href="#" class="busquedas"></a></li>
             </ul>
-
-
-        </div>
+             
     </header>
     <main class="starWars">
-       
-       <section class="productoPrincipal">
-           <div class="productoPrincipal__img">
-            <img src="../img/unsplash_4OHkK555s1A.svg" alt="soldado imperial" class="productoPrincipal__img ">
-           </div>
-       
-        <div class="productoPrincipal__contenido">
-            <h4 class="starWars__descripcion precio productoPrincipal__titulo  ">Soldado Imperial</h4>
-            <h4 class="starWars__precio productoPrincipal__precio ">$60.00</h4>
-            <p class="productoPricipal__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, consectetur. Porro sapiente, atque animi eos officia quo placeat. Ea assumenda
-                explicabo eveniet. Repudiandae similique nihil itaque magnam maxime numquam soluta!</p>
-    
-        </div>
-       
+       <section>
+        <h1 class="nuevoProducto__titulo">Editar Producto</h1>
+        <section class="nuevoProducto">
+   
+            <div class="agregarImagen">
+                <button class="btnUploadImg">Haz clic para agregar imagen</button>
+                <img src="" alt="" class="" id="img-preview" style="border: none; margin: 0;" >
+                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png" hidden class="inputFile"
+                    id="img-uploader">
+            </div>
+            <form action="post" class="nuevoProducto__form">
+            <div style="margin:1rem">
+                <input type="text" class="nombreProducto" placeholder="Nombre de produco" required>
+                </input>
+                <input type="text" class="seccionProducto nombreProducto" placeholder="seccion" required>
+                
+                <input type="text" class="precioProducto" placeholder="Precio" required>
+                <textarea type="text" class="descripcionProducto" placeholder="Descripcion" required></textarea>
+                <button type="submit" class="agregarProducto">Guardar Modificaciones</button>
+            </div>
 
+
+
+        </form>
+        
     </section>
+
+
+       
+       
+
+
     
-        <section class="productosSimilares__content">
-             <h2 class="productosSimilares__titulo">Productos similares</h2>
-            <ul class="productosSimilares__lista">
-
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_epRFE_hBNjo.svg" alt="darth vader" class="productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion ">Darth Vader</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="./producto2.html" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_KeGToDVN0l4.svg" alt="yoda" class=" productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion">Yoda</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="./producto3.html" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_6FDXGY9J6y4.svg" alt="Taza starwars" class=" productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion">Solado Imperial</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="./producto1.html" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_R8L1l9RN198.svg" alt="baby yoda" class=" productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion">Baby Yoda</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_1VV1MRafd7A.svg" alt="" class="starWars__img productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion">Producto XYZ</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-                <li class="productosSimilares__items">
-                    <img src="../img/unsplash_bUgaIaZysH0.svg" alt="darth vader" class="productoSimilares__img">
-                    <h4 class="productosSimilares__descripcion">Darth Vader</h4>
-                    <h4 class="productosSimilares__precio">$60.00</h4>
-                    <a href="" class="productosSimilares__verProductos">Ver producto</a>
-                </li>
-            </ul>
-
-        </section>
+       
         <section class="sobreNosotros">
             <h1 class="sobreNosotros__titulo">
                 <img src="../img/Logo.svg" alt="Logo alura geek" class="sobreNosotros__titulo">

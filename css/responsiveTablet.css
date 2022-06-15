@@ -34,7 +34,7 @@
     .diversos__lista {
         margin: .8rem;
         justify-content: space-between;
-        width: 100%;
+        width: auto;
     }
 
     .sobreNosotros__titulo {
