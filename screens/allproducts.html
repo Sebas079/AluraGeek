@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/tdProductosItems.css">
 
     <script type="module" defer src="../js/productos/allProducts.js"></script>
-
+    <script type="module" defer src="../js/productos/buscarProducto.js"></script>
     <title>Todos los Productos</title>
 </head>
 
@@ -32,7 +32,8 @@
         </h1>
 
         <div class="busqueda">
-            <input class="buscador__input" placeholder="Que deseas buscar?">
+            <input type="search" class="buscador__input" data-find placeholder="Que deseas buscar?">
+
             <ul class="busqueda__lista">
                 <a href="../screens/login.html" class="busqueda__loguin" target="_blank">
                     <li class="nav nav__loguin ">Loguin</li>
@@ -46,6 +47,9 @@
         </div>
     </header>
     <main>
+        <div class="resultadoBusqueda">
+            <ul class="resultadoBusqueda" data-resultado></ul>
+        </div>
         <section class="tdProductos__contenido">
             <section class="tdProducto">
                 <div class="tdProductos__head">
@@ -61,7 +65,7 @@
             <div class="tdProductos__lista">
 
                 <ul class="starWars__lista" data-allProd>
-     
+
                 </ul>
 
             </div>

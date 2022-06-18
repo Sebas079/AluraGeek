@@ -25,16 +25,17 @@
         integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer type="module" src="../js/productos/productoDesripcion.js"></script>
+    <script defer type="module" src="../js/productos/buscarProducto.js"></script>
 
-
-    <title></title>
+    <title>Productos</title>
 </head>
 
 <body>
     <header class="buscador">
         <img src="../img/Logo.svg" alt="logo Alura geek" class="logo">
         <div class="busqueda">
-            <input class="buscador__input" placeholder="Que deseas buscar?">
+            <input type="search" class="buscador__input" data-find placeholder="Que deseas buscar?">
+            
             <ul class="busqueda__lista">
                 <li class="nav nav__loguin "><a href="../loguin.html" class="loguin"></a>Login</li>
                 <li class="nav nav__busquedas"><a href="#" class="busquedas"></a></li>
@@ -44,7 +45,9 @@
         </div>
     </header>
     <main class="starWars">
-
+        <div class="resultadoBusqueda">
+            <ul class="resultadoBusqueda" data-resultado></ul>
+        </div>
         <section class="productoPrincipal" data-sectioPrincipal id="productoPrincipal">
          
 

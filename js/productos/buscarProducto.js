@@ -1,37 +1,29 @@
 import { services } from "./services.js";
-//import {mostrarProducto} from "./productoDesripcion.js"
-const buscarProducto = document.querySelector(".buscador__input");
 
-/*const url = new URL(window.location);
-    const producto = url.searchParams.get("id");
-    if (id === null) {
-        window.location.href = "../screens/error.html"
-    }
-    services.buscarProducto(producto).then((data) => {
-        console.log(data)
-       
-    })*/
+const barraBusqueda = document.querySelector("[data-find]");
+const resultado = document.querySelector("[data-resultado]");
+console.log(resultado)
 
-
-buscarProducto.addEventListener("input",( )=> {
-    console.log(buscarProducto.value);
-    services.addProducts().then( (data) => {
+const filtrar = () => {
+    resultado.innerHTML ="";
+    const texto = barraBusqueda.value.toLowerCase();
+ services.addProducts().then((data) => {
+    console.log(data)
+    data.forEach(({image, productName,categoria, price, description,id})  => {
+        let nombreProducto = productName.toLowerCase();
         
-       data.forEach(({image, productName,categoria, price, description,id }) => {
-        
-        const nombreProducto = productName.toLowerCase();
-        const nombreCategoria = categoria.toLowerCase();
-        const texto = buscarProducto.value.toLowerCase();
-        let resultado;
-    
-        if(nombreProducto.indexOf(texto) != -1){
-            services.verProducto(nombreProducto)
-         
+        if(nombreProducto.indexOf(texto) !== -1){
+            console.log(texto)
+            resultado.innerHTML += `<li class="resultadoBusqueda" data-list>
+            <a href="../screens/productoSeleccionado.html?id=${id}">
+            ${nombreProducto}
+            </a>
+            </li>`;
         }
-        })     
-                 
-      });
     });
-
-      
-           
+ })
+ 
+}
+barraBusqueda.addEventListener("keyup",filtrar)
+const li = document.querySelector("data-list");
+console.log(li)

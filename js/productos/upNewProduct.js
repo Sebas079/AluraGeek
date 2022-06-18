@@ -3,6 +3,7 @@ import { producto } from "./productos.js";
 import { services } from "./services.js";
 
 import { imagePreview } from "./uploadImg.js";
+
 const nombreProducto = document.querySelector(".nombreProducto");
 const categoria = document.querySelector(".seccionProducto");
 const precio = document.querySelector(".precioProducto");
@@ -22,13 +23,12 @@ btnAgregarProducto.addEventListener("click", (event) => {
   newProducto.description = description.value;
   newProducto.id = uuid.v4();
   if(newProducto.image != "" && newProducto.producName != "" && newProducto.categoria != "" && newProducto.price != "" && newProducto.description != "" ){
-    console.log(newProducto)
+    
     services.crearProducto(newProducto).then(response => console.log(response))
     .catch(err => err= window.location.href="../screens/error.html");
   }else{
     alert("Todos los campos son obligatorios" )
   }
  
-  console.log(newProducto)
 
 })

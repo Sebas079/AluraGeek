@@ -1,4 +1,4 @@
-/*import { services } from "./services.js";
+import { services } from "./services.js";
 
 
 
@@ -30,7 +30,6 @@ function newProduct(image, productName, precio, descripcionProducto, id) {
 const ul = document.querySelector(".starWars__lista");
 
 
-services.addProducts(newProduct).then(data =>{
-  console.log(data)
+services.addProducts().then(data =>{
+  
 })
-*/

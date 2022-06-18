@@ -43,5 +43,28 @@
 input:active{
     border: 2px solid var(--colorButton);
     
+    
 }
+.resultadoBusqueda{
+    
+    background: #fff;
+    padding: 0 7rem 0 7rem;
+}
+.resultadoBusqueda ul{
+    width: 50%;
+    height: auto;
+}
+
+.resultadoBusqueda li{
+    color: var(--colorButton);
+    margin: 1rem;
+    font-size: 1.3rem;
+    width: 16vw;
+}
+.resultadoBusqueda li:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+
 

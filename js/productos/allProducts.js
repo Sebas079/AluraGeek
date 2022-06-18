@@ -13,7 +13,7 @@ function newProduct(image, productName, categoria, price, description, id) {
                      </div>
                      <h4 class="starWars__descripcion precio">${productName}</h4>
                      <h4 class="starWars__precio">${price}</h4>
-                     <a href="../screens/productoSelecionado.html?id=${id}" class="starWars__verProductos">Ver producto</a>
+                     <a href="../screens/productoSeleccionado.html?id=${id}" class="starWars__verProductos">Ver producto</a>
                     </li> `;
   li.innerHTML = contenido;
   li.classList.add("starWars__lista");
@@ -28,7 +28,7 @@ console.log(ul)
 services.addProducts().then((data) => {
   data.forEach(({ image, productName,categoria, price, description, id }) => {
     const nuevoProducto = newProduct(image, productName,categoria, price, description, id);
-    //console.log(nuevoProducto);
+   
     ul.appendChild(nuevoProducto);
 })
 })

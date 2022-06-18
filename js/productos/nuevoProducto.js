@@ -1,7 +1,7 @@
 import { services } from "./services.js";
 
 //creo producto 
-function newProduct({ image, productName, categoria, price, descripcionProducto, id }) {
+function newProduct(image, productName, categoria, price, descripcionProducto, id) {
 
   const li = document.createElement("li");
   const contenido = ` <li class="porductos__lista__item" data-prod>
@@ -16,7 +16,7 @@ function newProduct({ image, productName, categoria, price, descripcionProducto,
                      </div>
                      <h4 class="starWars__descripcion precio productoPrincipal__titulo  ">${productName}</h4>
                      <h4 class="starWars__precio">$ ${price}</h4>
-                     <a href="../screens/productoSelecionado.html?id=${id}" class="starWars__verProductos" target ="_blank">Ver producto</a>
+                     <a href="../screens/productoSeleccionado.html/?id=${id}" class="starWars__verProductos" target ="_blank">Ver producto</a>
                     </li> `;
   li.innerHTML = contenido;
   li.classList.add("starWars__lista");
@@ -24,7 +24,7 @@ function newProduct({ image, productName, categoria, price, descripcionProducto,
   //elimino producto
   btnEliminar.addEventListener("click", () => {
     const id = btnEliminar.id;
-    services.deleteProduct(id).then(() => console.log("gracias!").catch(e => e = window.location.href = "../screens/error.html"));
+    services.deleteProduct(id).then(() => console.log("gracias!")).catch(e => e = window.location.href = "../screens/error.html");
 
   });
 
@@ -35,9 +35,11 @@ const ul = document.querySelector(".starWars__lista");
 
 //agrego los productos 
 services.addProducts().then((data) => {
-  data.forEach(({ image, productName, categoria, price, description, id }) => {
-    const nuevoProducto = newProduct({ image, productName, categoria, price, description, id });
-
+ 
+  data.forEach(({image, productName, categoria, price, description, id }) => {
+ 
+    const nuevoProducto = newProduct(image, productName, categoria, price, description, id );
+  
     ul.appendChild(nuevoProducto);
 
   })

@@ -20,34 +20,43 @@
     <link rel="stylesheet" href="./css/responsiveTablet.css">
     <link rel="stylesheet" href="./css/screen992.css">
     <script defer type="module" src="./js/productos/ProductsPrincipalPage.js"></script>
-
+    <script defer type="module" src="./js/productos/buscarProducto.js"></script>
+    <script defer type="module" src="./js/productos/services.js"></script>
 
     <title>Alura Geek</title>
 </head>
 
 <body class="body">
     <header class="buscador">
-        <h1>
-            <img src="./img/Logo.svg" alt="logo Alura geek" class="logo">
+        <h1><a href="index.html">
+
+                <img src="./img/Logo.svg" alt="logo Alura geek" class="logo">
+            </a>
         </h1>
         <div class="busqueda">
             <input type="search" class="buscador__input" data-find placeholder="Que deseas buscar?">
-            <ul class="resultadoBusqueda" data-resultado></ul>
+            <button type="button"><i></i></button>
             <ul class="busqueda__lista">
                 <a href="./screens/login.html" class="busqueda__loguin" target="_blank">
                     <li class="nav nav__loguin ">Loguin</li>
                 </a>
-                <a href="#" class="busquedas"></a>
-                <li class="nav nav__busquedas"></li>
-                </a>
+
+                <button type="button" class="nav nav__busquedas"></button>
+
             </ul>
-
-
         </div>
+
+
+
     </header>
 
 
+
     <main class="contenido">
+        <div class="resultadoBusqueda">
+            <ul class="resultadoBusqueda" data-resultado></ul>
+        </div>
+
         <section class="ofertas">
 
             <div class="ofertas__contenido">

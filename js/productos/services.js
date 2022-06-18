@@ -9,7 +9,7 @@ const crearProducto= (image, productName,categoria, price, description,id ) =>{
         headers:{
             "Content-Type": "application/json"
         },
-        body:JSON.stringify(image, productName,categoria, price, description,id )
+        body:JSON.stringify(image, productName,categoria, price, description,id)
     })
 }
 
@@ -20,7 +20,7 @@ const deleteProduct = (id) =>{
 } 
 
 async function actualizarProducto(image, productName, categoria, price, description, id) {
-    console.log(image, productName, categoria, price, description, id);
+   
     return fetch(`http://localhost:3000/profile/${id}`, {
         method: "PUT",
         headers: {
@@ -29,24 +29,26 @@ async function actualizarProducto(image, productName, categoria, price, descript
         body: JSON.stringify({image, productName, categoria, price, description, id})
     }).catch((error) => {
         return window.location.href = "../screens/error.html";
-    });
+    })
 }
 const verProducto = async (id) => {
-    console.log(id)
+    
   return  fetch(`http://localhost:3000/profile/${id}`).then(response => response.json())
 }
-const buscarProducto = (productName) =>{
+const productoBuscado =  (productName) =>{
     console.log(productName)
     return fetch(`http://localhost:3000/profile/${productName}`).then(response => response.json())
-
+ 
 }
+  
 export const services ={
     addProducts,
     crearProducto,
     deleteProduct,
     actualizarProducto, 
     verProducto,
-    buscarProducto
+    productoBuscado
+
 
 }
 
